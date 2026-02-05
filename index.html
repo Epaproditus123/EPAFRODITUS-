@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <body>
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="contact.html">contact</a>
+   </br>
+  </body>
+  </head>
+  </html>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Gorengan KREN - Menu Lezat!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fff9e6;
+            color: #442c00;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #ffc107, #ff8c00);
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #fff3cd;
+            font-weight: 500;
+        }
+
+        /* Menu Container */
+        .menu-section {
+            max-width: 1300px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #ff8c00;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background-color: #ffc107;
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .gorengan-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        /* Item Gorengan */
+        .gorengan-item {
+            background-color: white;
+            width: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            cursor: default;
+        }
+
+        .gorengan-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .gorengan-foto {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #ffc107;
+        }
+
+        .gorengan-detail {
+            padding: 22px;
+        }
+
+        .gorengan-nama {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #ff8c00;
+            font-weight: 600;
+        }
+
+        .gorengan-deskripsi {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .gorengan-harga {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #28a745;
+            display: flex;
+            align-items: center;
+        }
+
+        .gorengan-harga span {
+            font-size: 0.85rem;
+            color: #ff4444;
+            margin-left: 10px;
+            background-color: #ffebee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #442c00;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .gorengan-item {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WARUNG GORENGAN KREN</h1>
+        <p>Gorengnya Renyah, Rasanya Nagih, Harganya Ramah Kantong!</p>
+    </header>
+
+    <main class="menu-section">
+        <h2 class="section-title">✨ PILIHAN GORENGAN TERFAVORIT</h2>
+        
+        <div class="gorengan-container">
+            <!-- Item 1 -->
+            <div class="gorengan-item">
+                <img src="Image/Tahu.jpg" 
+                     alt="Tahu Isi Super" class="gorengan-foto">
+                <div class="gorengan-detail">
+                    <h3 class="gorengan-nama">TAHU ISI SUPER</h3>
+                    <p class="gorengan-deskripsi">Tahu putih lembut di dalam, dilapisi adonan tepung kriuk yang menggugah selera! Diisi dengan campuran udang cincang dan sayuran segar yang bikin ketagihan tiada akhir. Saji dengan saus pedas manis yang makin memanjakan lidah!</p>
+                    <p class="gorengan-harga">Rp 5.000 <span>TERLARIS!</span></p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="gorengan-item">
+                <img src="Image/tempe.jpg" 
+                     alt="Tempe Bacem Goreng" class="gorengan-foto">
+                <div class="gorengan-detail">
+                    <h3 class="gorengan-nama">TEMPE BACEM GORENG</h3>
+                    <p class="gorengan-deskripsi">Tempe yang direndam bumbu bacem khas Jawa – manis gurih dengan sentuhan kayu manis yang harum! Setelah digoreng, kulitnya jadi renyah garing sementara bagian dalam tetap lembut dan meresap bumbu sempurna!</p>
+                    <p class="gorengan-harga">Rp 4.500 <span>WAJIB COBA!</span></p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="gorengan-item">
+                <img src="Image/Pisang.jpg" 
+                     alt="Pisang Goreng Keju" class="gorengan-foto">
+                <div class="gorengan-detail">
+                    <h3 class="gorengan-nama">PISANG GORENG KEJU LUMER</h3>
+                    <p class="gorengan-deskripsi">Pisang raja matang pas yang manis alami, dibalut adonan tepung lembut yang digoreng hingga keemasan emas! Diisi keju mozzarella yang meleleh menggoda saat kamu gigit – cocok buat cemilan sore atau teman ngobrol!</p>
+                    <p class="gorengan-harga">Rp 6.000 <span>TERENAK!</span></p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="gorengan-item">
+                <img src="Image/Cireng.jpg" 
+                     alt="Cireng Isi Cabe Ijo" class="gorengan-foto">
+                <div class="gorengan-detail">
+                    <h3 class="gorengan-nama">CIRENG ISI CABE IJO PEDAS</h3>
+                    <p class="gorengan-deskripsi">Cireng kriuk yang renyah sampai suara "krek-krek" saat dibuka! Diisi sambal cabe ijo yang pedas menggairahkan dengan campuran udang kecil yang kriuk. Cocok buat kamu yang suka tantangan rasa pedas yang nikmat!</p>
+                    <p class="gorengan-harga">Rp 5.500 <span>NAIK GDEG!</span></p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="gorengan-item">
+               <img src="Image/Sosis.jpg" class="gorengan-foto">
+                <div class="gorengan-detail">
+                    <h3 class="gorengan-nama">SOSIS SOLO GORENG TEPUNG</h3>
+                    <p class="gorengan-nama">Sosis Solo asli yang gurih dan kenyal, dibalut adonan tepung spesial yang digoreng hingga warnanya keemasan sempurna! Setiap gigitan memberikan sensasi renyah luar dan lembut dalam – bikin kamu pengen lagi dan lagi!</p>
+                    <p class="gorengan-harga">Rp 7.000 <span>TERMURAH!</span></p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="gorengan-item">
+              <img src="Image/bakwan.jpg" class="gorengan-foto">
+                <div class="gorengan-detail">
+                    <h3 class="gorengan-nama">BAKWAN JAGUNG KEJU GEMOY</h3>
+                    <p class="gorengan-deskripsi">Campuran jagung muda manis dan tepung beras yang dibikin lembut, ditambah potongan keju yang melimpah! Digoreng hingga luarnya renyah dan dalamnya tetap lembut lembek – cocok buat sarapan atau cemilan anak-anak!</p>
+                    <p class="gorengan-harga">Rp 5.000 <span>TERPOPULER!</span></p>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="gorengan-item">
+               <img src="Image/lemper.jpg" alt="Lemper Udang Goreng" class="gorengan-foto">
+                <div class="gorengan-detail">
+                    <h3 class="gorengan-nama">LEMPER UDANG GORENG</h3>
+                    <p class="gorengan-deskripsi">Lemper beras ketan pulen yang dibungkus daun pisang harum, diisi udang besar yang segar! Setelah digoreng, kulit luar jadi kriuk sedangkan bagian dalam tetap lembut – kombinasi rasa yang tak terlupakan!</p>
+                    <p class="gorengan-harga">Rp 8.000 <span>EKSLUSIF!</span></p>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="gorengan-item">
+                <img src="Image/lemper.jpg" 
+                     alt="Kripik Kentang Balado" class="gorengan-foto">
+                <div class="gorengan-detail">
+                    <h3 class="gorengan-nama">KRIPIK KENTANG BALADO PEDAS MANIS</h3>
+                    <p class="gorengan-deskripsi">Kentang pilihan yang dipotong tipis rata, digoreng hingga super renyah dan dibaluti bumbu balado yang pas pedasnya dan manisnya! Cocok buat teman nonton film atau sebagai oleh-oleh untuk keluarga!</p>
+                    <p class="gorengan-harga">Rp 10.000 <span>BEST SELLER!</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Warung Gorengan KREN | Buka Setiap Hari 07.00 - 21.00 WIB | Pesan Sekarang Juga!</p>
+    </footer>
+</body>
+</html>
